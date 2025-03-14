@@ -1,0 +1,54 @@
+/* Styles for displaying next Tetris tetrominoes */
+.info-section-middle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.next-container {
+  text-align: center;
+}
+
+.next-tetrominoes-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.next-tetromino {
+  display: inline-block;
+}
+
+.next-tetromino-grid {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 5px;
+  border-radius: 3px;
+  height: 44px;
+  box-sizing: border-box;
+}
+
+.preview-row {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .info-section-middle {
+    font-size: 3.5vw;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.9);
+  }
+
+  .next-container {
+    margin-left: 4vw;
+  }
+
+  .next-tetrominoes-row {
+    gap: 3px;
+  }
+}
