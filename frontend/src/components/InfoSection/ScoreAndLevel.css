@@ -1,0 +1,39 @@
+/* Styles for Tetris score, level, and timer display */
+.info-section-top {
+  flex: 0 0 auto;
+}
+
+.timer {
+  background-color: #1a1d24;
+  height: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+}
+
+.timer-bar {
+  background: linear-gradient(to right, #4caf50, #ffc107);
+  height: 100%;
+  transition: width 1s linear;
+}
+
+.timer p {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .info-section-top {
+    font-size: 3vw;
+    width: 50%;
+    margin-left: -20px;
+    align-items: center;
+  }
+}
