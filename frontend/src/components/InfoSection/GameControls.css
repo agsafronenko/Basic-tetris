@@ -1,0 +1,88 @@
+/* Styles for Tetris game controls and buttons */
+.info-section-bottom {
+  flex: 0 0 auto;
+}
+
+.game-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.control-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.control-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.control-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.mute-button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ff4444;
+  font-size: 20px;
+}
+
+.mute-button.muted {
+  background-color: #666;
+}
+
+.mute-button:hover {
+  background-color: #cc0000;
+}
+
+.mute-button.muted:hover {
+  background-color: #555;
+}
+
+.sound-slider {
+  width: 80%;
+}
+
+.controls {
+  margin-top: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.controls p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .game-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .controls {
+    display: none;
+  }
+}
