@@ -1,4 +1,4 @@
-// Type definitions for Tetris game info-section (display contains: score, level, next tetrominoes, game controls)
+// Type definitions for Tetris game info-section (displays: score, level, next tetrominoes, and game controls)
 export type TetrominoType = "I" | "J" | "L" | "O" | "S" | "T" | "Z";
 
 export type Position = {
