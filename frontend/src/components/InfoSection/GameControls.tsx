@@ -24,9 +24,10 @@ const GameControls: React.FC<GameControlsProps> = ({ gameStarted, isPaused, isMu
         </div>
       </div>
       <div className="controls">
-        <p>↑ Rotate</p>
-        <p>← → Move</p>
-        <p>↓ Drop</p>
+        <p>↑ - Rotate</p>
+        <p>← → - Move</p>
+        <p>↓ - Drop</p>
+        <p>P - Pause</p>
       </div>
     </div>
   );
