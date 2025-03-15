@@ -1,0 +1,53 @@
+.scoreboard-container {
+  width: auto;
+  background-color: #2c313c;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 604px;
+}
+
+.scoreboard-container h2 {
+  text-align: center;
+  margin: 5px 0 10px 0;
+  color: #ffc107;
+  font-size: 1.3rem;
+  flex: 0 0 auto;
+}
+
+.name-change-tooltip {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffc107;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  animation: tooltip-bounce 2s infinite;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+@keyframes tooltip-bounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .tetris-wrapper > div:last-child {
+    display: none;
+  }
+}

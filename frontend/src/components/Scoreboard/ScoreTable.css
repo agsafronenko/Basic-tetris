@@ -1,0 +1,147 @@
+.scoreboard-table-container {
+  overflow-y: auto; /* Scrollable if content exceeds height */
+  flex: 1 1 auto; /* Grows to fill available space, shrinks if needed */
+  display: flex; /* Ensure the table stretches properly */
+  flex-direction: column;
+}
+
+.scoreboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  flex: 1 1 auto;
+}
+
+.scoreboard-table th {
+  padding: 3px 3px;
+  text-align: left;
+  border-bottom: 2px solid #4a4f5a;
+  color: #b9bbbe;
+  position: sticky;
+  top: 0;
+  background-color: #2c313c;
+  z-index: 1;
+}
+
+.scoreboard-table td {
+  padding: 3px 3px;
+  border-bottom: 1px solid #3a3f4b;
+}
+
+.rank-column {
+  width: 15%;
+}
+
+.name-column {
+  width: 40%;
+}
+
+.score-column {
+  width: 25%;
+  text-align: right !important;
+}
+
+.level-column {
+  width: 20%;
+  text-align: center !important;
+}
+
+.scoreboard-table td:nth-child(3) {
+  text-align: right;
+}
+
+.scoreboard-table td:nth-child(4) {
+  text-align: center;
+}
+
+.gold-rank {
+  background-color: rgba(255, 215, 0, 0.2);
+}
+
+.gold-rank td:first-child {
+  position: relative;
+}
+
+.gold-rank td:first-child::after {
+  content: "🥇";
+  position: relative;
+  top: -2px;
+  left: 5px;
+  font-size: 0.8rem;
+}
+
+.silver-rank {
+  background-color: rgba(192, 192, 192, 0.2);
+}
+
+.silver-rank td:first-child {
+  position: relative;
+}
+
+.silver-rank td:first-child::after {
+  content: "🥈";
+  position: relative;
+  top: -2px;
+  left: 5px;
+  font-size: 0.8rem;
+}
+
+.bronze-rank {
+  background-color: rgba(205, 127, 50, 0.2);
+}
+
+.bronze-rank td:first-child {
+  position: relative;
+}
+
+.bronze-rank td:first-child::after {
+  content: "🥉";
+  position: relative;
+  top: -2px;
+  left: 5px;
+  font-size: 0.8rem;
+}
+
+.player-row {
+  background-color: rgba(76, 175, 80, 0.2);
+  font-weight: bold;
+}
+
+.editable-name {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #ffc107;
+  transition: color 0.2s;
+}
+
+.editable-name:hover {
+  color: #ffc107;
+}
+
+.ranking-up {
+  animation: ranking-up 1.5s;
+}
+
+@keyframes ranking-up {
+  0% {
+    transform: translateY(0);
+    background-color: rgba(76, 175, 80, 0.2);
+  }
+  25% {
+    transform: translateY(-5px);
+    background-color: rgba(76, 175, 80, 0.8);
+  }
+  50% {
+    transform: translateY(0);
+    background-color: rgba(255, 215, 0, 0.4);
+  }
+  75% {
+    transform: translateY(-3px);
+    background-color: rgba(76, 175, 80, 0.6);
+  }
+  100% {
+    transform: translateY(0);
+    background-color: rgba(76, 175, 80, 0.2);
+  }
+}

@@ -1,0 +1,9 @@
+.player-row {
+  background-color: rgba(76, 175, 80, 0.2);
+  font-weight: bold;
+}
+
+.current-game {
+  font-style: italic;
+  border-top: 1px dashed #4caf50;
+}
